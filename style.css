@@ -22,3 +22,4 @@ th,td{border:1px solid #d5dee4;padding:12px;text-align:left}th{background:#e6f0f
 .lock{background:#2b2f36;color:#fff;border-radius:14px;padding:24px}
 footer{text-align:center;color:#7a8b95;font-size:13px;padding:20px}
 .yt{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.gf iframe{width:100%;height:1600px;border:0;border-radius:10px;background:#fff}@media(max-width:600px){.gf iframe{height:2000px}}
