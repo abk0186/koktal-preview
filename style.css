@@ -24,3 +24,9 @@ footer{text-align:center;color:#7a8b95;font-size:13px;padding:20px}
 .yt{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .gf iframe{width:100%;height:1600px;border:0;border-radius:10px;background:#fff}@media(max-width:600px){.gf iframe{height:2000px}}
 .a2hs{border:2px solid #0e5a6f;margin:16px 0}.a2hs ol{padding-left:20px}.a2hs li{margin:6px 0}
+.danger{background:#fde8e8;border:2px solid #d64545;margin:12px 0}
+.chemgrid{grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.chem{border-top:8px solid #9aa9b2;display:flex;flex-direction:column;gap:10px}.chem img{width:100%;max-height:260px;object-fit:contain;background:#f4f7f9;border-radius:10px}
+.chem.neu{border-top-color:#2e9e5b}.chem.alk{border-top-color:#2a78d6}.chem.cl{border-top-color:#e0a100}.chem.sol{border-top-color:#8a5cc2}
+.tag{display:inline-block;padding:4px 10px;border-radius:12px;background:#e6f0f3;font-size:13px;font-weight:600}
+.chem dl{margin:0}.chem dt{font-weight:700;font-size:14px;margin-top:8px;color:#0e5a6f}.chem dd{margin:2px 0 0}
