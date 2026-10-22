@@ -1,0 +1,2 @@
+(function(){var d=document.documentElement;function set(l){d.dataset.lang=l;d.lang=l=="kz"?"kk":"ru";localStorage.setItem("lang",l);var t=document.querySelector("title");if(t&&t.dataset[l])document.title=t.dataset[l];document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.l==l)})}
+document.querySelectorAll(".lang button").forEach(function(b){b.onclick=function(){set(b.dataset.l)}});set(d.dataset.lang||"kz")})();

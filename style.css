@@ -35,3 +35,8 @@ details{background:#fff;border-radius:12px;margin:8px 0;box-shadow:0 1px 4px rgb
 .cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}.cz{color:#fff;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cz b{font-size:18px}
 .ck label{display:flex;gap:10px;align-items:center;min-height:44px;border-bottom:1px solid #e6edf1}.ck input{width:22px;height:22px;flex:none}
 @media print{header,footer,.noprint,.a2hs{display:none}body{background:#fff;font-size:12pt}.card,details{box-shadow:none;border:1px solid #ccc}.pb{break-before:page}table{min-width:0}td{height:28px}main{padding:0}}
+.kz{display:inline;font-size:inherit;color:inherit;font-weight:inherit}
+html[data-lang=kz] .ru,html[data-lang=ru] .kz{display:none!important}
+.sub{color:#5c7280;font-size:14px;margin-top:-6px}
+.lang{display:flex;gap:4px;margin-left:auto}.lang button{min-height:40px;min-width:52px;border-radius:20px;border:2px solid #fff;background:transparent;color:#fff;font-weight:700;cursor:pointer}.lang button[aria-pressed=true]{background:#fff;color:#0e5a6f}
+@media print{.lang{display:none}}
