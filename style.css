@@ -30,3 +30,8 @@ footer{text-align:center;color:#7a8b95;font-size:13px;padding:20px}
 .chem.neu{border-top-color:#2e9e5b}.chem.alk{border-top-color:#2a78d6}.chem.cl{border-top-color:#e0a100}.chem.sol{border-top-color:#8a5cc2}
 .tag{display:inline-block;padding:4px 10px;border-radius:12px;background:#e6f0f3;font-size:13px;font-weight:600}
 .chem dl{margin:0}.chem dt{font-weight:700;font-size:14px;margin-top:8px;color:#0e5a6f}.chem dd{margin:2px 0 0}
+details{background:#fff;border-radius:12px;margin:8px 0;box-shadow:0 1px 4px rgba(0,0,0,.08)}summary{cursor:pointer;padding:14px 16px;min-height:48px;list-style-position:inside}details>*:not(summary){margin-left:16px;margin-right:16px}details[open]{padding-bottom:8px}
+.ok-box{background:#e3f6ea;border-radius:10px;padding:10px}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:12px}.cz{color:#fff;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;-webkit-print-color-adjust:exact;print-color-adjust:exact}.cz b{font-size:18px}
+.ck label{display:flex;gap:10px;align-items:center;min-height:44px;border-bottom:1px solid #e6edf1}.ck input{width:22px;height:22px;flex:none}
+@media print{header,footer,.noprint,.a2hs{display:none}body{background:#fff;font-size:12pt}.card,details{box-shadow:none;border:1px solid #ccc}.pb{break-before:page}table{min-width:0}td{height:28px}main{padding:0}}
