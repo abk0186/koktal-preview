@@ -40,3 +40,6 @@ html[data-lang=kz] .ru,html[data-lang=ru] .kz{display:none!important}
 .sub{color:#5c7280;font-size:14px;margin-top:-6px}
 .lang{display:flex;gap:4px;margin-left:auto}.lang button{min-height:40px;min-width:52px;border-radius:20px;border:2px solid #fff;background:transparent;color:#fff;font-weight:700;cursor:pointer}.lang button[aria-pressed=true]{background:#fff;color:#0e5a6f}
 @media print{.lang{display:none}}
+.yt iframe:fullscreen,.yt.v iframe:fullscreen{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;aspect-ratio:auto!important;margin:0!important;transform:none!important;border-radius:0!important}
+.yt iframe:-webkit-full-screen,.yt.v iframe:-webkit-full-screen{position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;max-width:none!important;max-height:none!important;aspect-ratio:auto!important;margin:0!important;transform:none!important;border-radius:0!important}
+.yt,.card,.grid,main{transform:none;contain:none;filter:none}
