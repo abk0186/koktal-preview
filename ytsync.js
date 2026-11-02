@@ -1,9 +1,9 @@
 (function(){
 var players=[],seen=new WeakSet(),ready=false;
 function isYT(f){return /youtube(-nocookie)?\.com\/embed\//.test(f.src||"")}
-function fix(f){var a=f.getAttribute("allow")||"";if(a.indexOf("fullscreen")<0)f.setAttribute("allow",(a?a+"; ":"")+"fullscreen");f.setAttribute("allowfullscreen","");if(!/enablejsapi=1/.test(f.src)){f.src=f.src+(f.src.indexOf("?")<0?"?":"&")+"enablejsapi=1"}}
+function fix(f){var a=f.getAttribute("allow")||"";if(a.indexOf("fullscreen")<0)f.setAttribute("allow",(a?a+"; ":"")+"fullscreen");f.setAttribute("allowfullscreen","");f.removeAttribute("width");f.removeAttribute("height");if(!/enablejsapi=1/.test(f.src)){f.src=f.src+(f.src.indexOf("?")<0?"?":"&")+"enablejsapi=1"}}
 function reg(f){if(!ready||seen.has(f)||!isYT(f))return;seen.add(f);fix(f);
- var p=new YT.Player(f,{events:{onStateChange:function(e){if(e.data===YT.PlayerState.PLAYING){players.forEach(function(o){if(o!==p&&o.pauseVideo&&o.getPlayerState&&o.getPlayerState()===1)o.pauseVideo()})}}}});
+ var p=new YT.Player(f,{width:"100%",height:"100%",events:{onStateChange:function(e){if(e.data===YT.PlayerState.PLAYING){players.forEach(function(o){if(o!==p&&o.pauseVideo&&o.getPlayerState&&o.getPlayerState()===1)o.pauseVideo()})}}}});
  players.push(p)}
 function scan(){document.querySelectorAll("iframe").forEach(reg)}
 window.ktPlayers=players;
